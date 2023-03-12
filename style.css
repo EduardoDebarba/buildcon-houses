@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    position: sticky;
+    top: 0em;
+    padding: 30px;
+  }
+
+.name-header span{
+    color: rgb(94, 198, 37);
+}
+
+.name-header{
+    font-size: 35px;
+}
+
+.list-header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.first-section{
+    background-image: url(./images/home-1.jpg);
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.center h2{
+    font-size: 50px;
+}
+
+.center p{
+    font-size: 25px;
+}
+
+.second-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 800px;
+}
+
+.img-about{
+    width: 20%;
+}
+
+.main-services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.div-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: red;
+    width: 25%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.third-section{
+    text-align: center;
+}
+
+
+
+
+
+
+.button {
+    --color: rgb(198, 198, 13);
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    background-color: var(--color);
+    text-align: center;
+    cursor: pointer;
+   }
+   
+   .button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: rgb(228, 228, 34);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .button:hover:before {
+    top: -30px;
+    left: -30px;
+   } 
+   
+
+
