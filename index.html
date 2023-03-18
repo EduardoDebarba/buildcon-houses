@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
-    <script src="./script.js"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,18 +16,37 @@
   </head>
   <body>
     <header>
-      <div class="name-header">
+      <div class="container">
         <h4><span>BUILD</span>CON</h4>
-      </div>
-      <div class="list-header">
-        <ul>
-          <li>HOME</li>
-          <li>SOBRE</li>
-          <li>SERVIÇOS</li>
-          <li>PROJETOS</li>
-          <li>EQUIPE</li>
-          <li>CONTATO</li>
-        </ul>
+        <div class="menu-section">
+          <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#top">HOME</a>
+              </li>
+              <li>
+                <a href="#sobre-mim">SOBRE</a>
+              </li>
+              <li>
+                <a href="#title-projeto">SERVIÇOS</a>
+              </li>
+              <li>
+                <a href="#footer-contato">PROJETOS</a>
+              </li>
+              <li>
+                <a href="#footer-contato">EQUIPE</a>
+              </li>
+              <li>
+                <a href="#footer-contato">CONTATO</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -46,7 +63,7 @@
       </section>
 
       <section class="second-section">
-        <img class="img-about" src="./images/about.jpg" alt="" />
+        <img class="img-about" src="./images/about.jpg" alt="about" />
         <div>
           <h2>
             Nós Sempre Fornecemos a Melhor <br />
@@ -71,9 +88,10 @@
           <button class="button">Saiba Mais</button>
         </div>
       </section>
+
       <section class="third-section">
         <h2>Nossos Serviços</h2>
-        <p>
+        <p id="text-section">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste maiores
           unde quis modi? <br />
           Quidem doloremque voluptatem et eius, ratione adipisci commodi debitis
@@ -82,7 +100,7 @@
         </p>
         <div class="main-services">
           <div class="div-services">
-            <img src="./images/icons-laptop.png" alt="" />
+            <img src="./images/icons-laptop.png" alt="icons-laptop" />
             <h4>Melhor Qualidade</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
@@ -93,7 +111,7 @@
           </div>
 
           <div class="div-services">
-            <img src="./images/icon-dossie.png" alt="" />
+            <img src="./images/icon-dossie.png" alt="icon-dossie" />
             <h4>Sustentabilidade</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
@@ -104,7 +122,7 @@
           </div>
 
           <div class="div-services">
-            <img src="./images/icons-refresh.png" />
+            <img src="./images/icons-refresh.png" alt="icon-refresh" />
             <h4>Integridade</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
@@ -116,7 +134,7 @@
         </div>
       </section>
 
-      <section class="projects-section">
+      <section id="text-section" class="projects-section">
         <h2>Nossos Projetos</h2>
         <p id="text-projects">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil facere
@@ -126,35 +144,35 @@
         </p>
 
         <div class="projects">
-          <div class="card-projects">
-            <img src="./images/project-1.jpeg" alt="" />
+          <div id="project-1" class="card-projects">
+            <img src="./images/project-1.jpeg" alt="image-project" />
             <h4>Edificios Modernos</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatibus libero architecto facilis, autem earum numquam,
-              dolorum laudantium voluptas corporis ipsam harum.
+              dolorum.
             </p>
             <button class="button">Saiba Mais</button>
           </div>
 
-          <div class="card-projects">
-            <img id="img-project-2" src="./images/project-2.jpg" alt="" />
+          <div id="project-2" class="card-projects">
+            <img id="img-project-2" src="./images/project-7.jpeg" alt="image-project" />
             <h4>Edificios Modernos</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatibus libero architecto facilis, autem earum numquam,
-              dolorum laudantium voluptas corporis ipsam harum.
+              dolorum.
             </p>
             <button class="button">Saiba Mais</button>
           </div>
 
-          <div class="card-projects">
-            <img id="img-project-3" src="./images/project-3.jpg" alt="" />
+          <div id="project-3" class="card-projects">
+            <img id="img-project-3" src="./images/project-3.jpg" alt="image-project" />
             <h4>Edificios Modernos</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatibus libero architecto facilis, autem earum numquam,
-              dolorum laudantium voluptas corporis ipsam harum.
+              dolorum.
             </p>
             <button class="button">Saiba Mais</button>
           </div>
@@ -163,7 +181,7 @@
 
       <section class="team-section">
         <h2>Nossa Equipe</h2>
-        <p>
+        <p id="text-section">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugit
           modi atque. Reprehenderit <br />
           reiciendis omnis commodi blanditiis doloribus eum cupiditate veritatis
@@ -173,109 +191,108 @@
 
         <div class="team">
           <div class="card-team">
-            <img class="photo-team" src="./images/team-1.jpg" alt="" />
-            <h4>Jack Wilson</h4>
+            <img class="photo-team" src="./images/team-4.jpg" alt="" />
+            <h4>Ana Costa</h4>
             <p id="text-team">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
               recusandae autem ut quam qui eligendi quod pariatur, error
               suscipit. Nam exercitationem odio nobis!
             </p>
             <div class="itens-social-media">
-              <a href=""
-                ><img class="img-social" src="./images/facebook.svg" alt=""
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img class="img-social" src="./images/facebook.svg" alt="facebook"
               /></a>
-              <a href=""
+              <a href="https://www.instagram.com/" target="_blank"
                 ><img
                   class="img-social"
                   src="./images/instagram (2).svg"
-                  alt=""
+                  alt="instagram"
               /></a>
-              <a href=""
-                ><img class="img-social" src="./images/linkedin (1).svg" alt=""
+              <a href="https://www.linkedin.com/feed/" target="_blank"
+                ><img class="img-social" src="./images/linkedin (1).svg" alt="linkedin"
               /></a>
-              <a href=""
-                ><img class="img-social" src="./images/twitter (2).svg" alt=""
+              <a href="https://twitter.com/" target="_blank"
+                ><img class="img-social" src="./images/twitter (2).svg" alt="twitter"
+              /></a>
+            </div>
+          </div>
+          <div class="card-team">
+            <img class="photo-team" src="./images/team-2.jpg" alt="" />
+            <h4>Pedro Oliveira</h4>
+            <p id="text-team">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              recusandae autem ut quam qui eligendi quod pariatur, error
+              suscipit. Nam exercitationem odio nobis!
+            </p>
+            <div class="itens-social-media">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img class="img-social" src="./images/facebook.svg" alt="facebook"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img
+                  class="img-social"
+                  src="./images/instagram (2).svg"
+                  alt="instagram"
+              /></a>
+              <a href="https://www.linkedin.com/feed/" target="_blank"
+                ><img class="img-social" src="./images/linkedin (1).svg" alt="linkedin"
+              /></a>
+              <a href="https://twitter.com/" target="_blank"
+                ><img class="img-social" src="./images/twitter (2).svg" alt="twitter"
               /></a>
             </div>
           </div>
 
           <div class="card-team">
-            <img class="photo-team" src="./images/team-2.jpg" alt="" />
-            <h4>Jack Wilson</h4>
+            <img class="photo-team" src="./images/team-1.jpg" alt="" />
+            <h4>Carlos Monteiro</h4>
             <p id="text-team">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
               recusandae autem ut quam qui eligendi quod pariatur, error
               suscipit. Nam exercitationem odio nobis!
             </p>
             <div class="itens-social-media">
-              <a href=""
-                ><img class="img-social" src="./images/facebook.svg" alt=""
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img class="img-social" src="./images/facebook.svg" alt="facebook"
               /></a>
-              <a href=""
+              <a href="https://www.instagram.com/" target="_blank"
                 ><img
                   class="img-social"
                   src="./images/instagram (2).svg"
-                  alt=""
+                  alt="instagram"
               /></a>
-              <a href=""
-                ><img class="img-social" src="./images/linkedin (1).svg" alt=""
+              <a href="https://www.linkedin.com/feed/" target="_blank"
+                ><img class="img-social" src="./images/linkedin (1).svg" alt="linkedin"
               /></a>
-              <a href=""
-                ><img class="img-social" src="./images/twitter (2).svg" alt=""
+              <a href="https://twitter.com/" target="_blank"
+                ><img class="img-social" src="./images/twitter (2).svg" alt="twitter"
               /></a>
             </div>
           </div>
 
           <div class="card-team">
             <img class="photo-team" src="./images/team-3.jpeg" alt="" />
-            <h4>Jack Wilson</h4>
+            <h4>João dos Santos</h4>
             <p id="text-team">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
               recusandae autem ut quam qui eligendi quod pariatur, error
               suscipit. Nam exercitationem odio nobis!
             </p>
             <div class="itens-social-media">
-              <a href=""
-                ><img class="img-social" src="./images/facebook.svg" alt=""
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img class="img-social" src="./images/facebook.svg" alt="facebook"
               /></a>
-              <a href=""
+              <a href="https://www.instagram.com/" target="_blank"
                 ><img
                   class="img-social"
                   src="./images/instagram (2).svg"
-                  alt=""
+                  alt="instagram"
               /></a>
-              <a href=""
-                ><img class="img-social" src="./images/linkedin (1).svg" alt=""
+              <a href="https://www.linkedin.com" target="_blank"
+                ><img class="img-social" src="./images/linkedin (1).svg" alt="linkedin"
               /></a>
-              <a href=""
-                ><img class="img-social" src="./images/twitter (2).svg" alt=""
-              /></a>
-            </div>
-          </div>
-
-          <div class="card-team">
-            <img class="photo-team" src="./images/team-4.jpg" alt="" />
-            <h4>Jack Wilson</h4>
-            <p id="text-team">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              recusandae autem ut quam qui eligendi quod pariatur, error
-              suscipit. Nam exercitationem odio nobis!
-            </p>
-            <div class="itens-social-media">
-              <a href=""
-                ><img class="img-social" src="./images/facebook.svg" alt=""
-              /></a>
-              <a href=""
-                ><img
-                  class="img-social"
-                  src="./images/instagram (2).svg"
-                  alt=""
-              /></a>
-              <a href=""
-                ><img class="img-social" src="./images/linkedin (1).svg" alt=""
-              /></a>
-              <a href=""
-                ><img class="img-social" src="./images/twitter (2).svg" alt=""
+              <a href="https://twitter.com/" target="_blank"
+                ><img class="img-social" src="./images/twitter (2).svg" alt="twitter"
               /></a>
             </div>
           </div>
@@ -284,7 +301,7 @@
 
       <section class="contact-section">
         <h2>Entre em Contato</h2>
-        <p>
+        <p id="text-section">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
           Temporibus, dolore? Fugiat.
         </p>
@@ -304,8 +321,10 @@
         </div>
       </section>
     </main>
+
     <footer>
       <p>All Right Reserved by @EduardoDebarba</p>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

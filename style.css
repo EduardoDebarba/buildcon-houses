@@ -10,35 +10,54 @@ body {
 }
 
 header {
-  background-color: white;
+  height: 5em;
+  background-color: #fff;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0em;
-  padding: 30px;
 }
 
-.name-header span {
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.container span {
   color: rgb(94, 198, 37);
 }
 
-.name-header {
-  font-size: 35px;
+header .container h4 {
+  font-size: 2.3rem;
 }
 
-.list-header ul {
+header nav ul {
   display: flex;
-  flex-direction: row;
-  gap: 50px;
+}
+
+header nav ul li {
   list-style: none;
-  font-size: 20px;
-  cursor: pointer;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  padding: 2.4rem;
+  transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover{
+  color: rgb(94, 198, 37);
 }
 
 .first-section {
   background-image: url(./images/home-1.jpg);
-  height: 90vh;
+  height: 92vh;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -112,7 +131,7 @@ header {
 
 .third-section h2 {
   font-size: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 2rem;
 }
 
 .third-section p {
@@ -137,10 +156,9 @@ header {
   padding: 30px;
   background-color: rgb(70, 61, 61);
   width: 25%;
-  height: 45vh;
+  height: 50vh;
   border-radius: 10px;
   color: #fff;
-
   gap: 20px;
 }
 
@@ -159,6 +177,7 @@ h4 {
 
 .projects-section h2 {
   font-size: 50px;
+  margin-bottom: 2rem;
 }
 
 #text-projects {
@@ -210,6 +229,7 @@ h4 {
 
 .team-section h2 {
   font-size: 50px;
+  margin-bottom: 2rem;
 }
 
 .team-section p {
@@ -247,6 +267,7 @@ h4 {
   font-size: 50px;
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 2rem;
 }
 
 .contact-section p {
@@ -351,4 +372,377 @@ footer {
   padding: 20px;
   text-align: center;
   margin-top: 150px;
+}
+
+@media (min-width: 1301px) and (max-width: 1900px) {
+  .second-section div {
+    padding-top: 200px;
+    height: 100%;
+  }
+
+  .div-services {
+    height: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 649px) and (max-width: 1300px) {
+  nav {
+    display: none;
+  }
+
+  .one,
+  .two,
+  .three {
+    background-color: rgb(0, 0, 0);
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: 0.3s;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  /* fullscreen */
+  .menu-section.on {
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-section.on nav {
+    display: block;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 115px;
+    top: 20px;
+  }
+
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+
+  header .container h4 {
+    font-size: 2rem;
+  }
+
+  .menu-section.on nav ul {
+    text-align: center;
+    display: block;
+    padding: 0;
+  }
+
+  .menu-section.on nav ul a {
+    transition-duration: 0.5s;
+    font-size: 1.8rem;
+    line-height: 1rem;
+    display: block;
+  }
+
+  .first-section .center {
+    width: 90%;
+  }
+
+  .first-section .center h2 {
+    font-size: 50px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .first-section .center p {
+    font-size: 20px;
+  }
+
+  .second-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    height: 100%;
+  }
+
+  .second-section .img-about {
+    display: none;
+  }
+
+  .second-section div {
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 90%;
+  }
+
+  .second-section p {
+    padding: 25px;
+    text-align: justify;
+  }
+
+  .third-section {
+    height: 100%;
+    margin-top: 100px;
+  }
+
+  .third-section p {
+    padding: 25px;
+    text-align: justify;
+  }
+
+  .main-services {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .div-services {
+    width: 80%;
+    height: 100%;
+  }
+
+  #text-section {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .projects-section {
+    margin-top: 100px;
+  }
+
+  .projects-section p {
+    padding: 25px;
+    text-align: justify;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .card-projects {
+    width: 100%;
+    height: 100%;
+    gap: 0;
+  }
+
+  .card-projects h4 {
+    margin-top: 15px;
+  }
+
+  .team-section p {
+    text-align: justify;
+    padding: 25px;
+  }
+
+  .team {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card-team {
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    gap: 0;
+  }
+
+  .feed-form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  nav {
+    display: none;
+  }
+
+  .one,
+  .two,
+  .three {
+    background-color: rgb(0, 0, 0);
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: 0.3s;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  /* fullscreen */
+  .menu-section.on {
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-section.on nav {
+    display: block;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 45px;
+    top: 20px;
+  }
+
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+
+  header .container h4 {
+    font-size: 2rem;
+  }
+
+  .menu-section.on nav ul {
+    text-align: center;
+    display: block;
+    padding: 0;
+  }
+
+  .menu-section.on nav ul a {
+    transition-duration: 0.5s;
+    font-size: 1.8rem;
+    line-height: 1rem;
+    display: block;
+  }
+
+  .first-section .center {
+    width: 90%;
+  }
+
+  .first-section .center h2 {
+    font-size: 50px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .first-section .center p {
+    font-size: 20px;
+  }
+
+  .second-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    height: 100%;
+  }
+
+  .second-section .img-about {
+    display: none;
+  }
+
+  .second-section div {
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .second-section p {
+    padding: 25px;
+    text-align: justify;
+  }
+
+  .third-section {
+    height: 100%;
+    margin-top: 100px;
+  }
+
+  .third-section p {
+    padding: 25px;
+    text-align: justify;
+  }
+
+  .main-services {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .div-services {
+    width: 90%;
+    height: 100%;
+  }
+
+  .projects-section {
+    margin-top: 100px;
+  }
+
+  .projects-section p {
+    padding: 25px;
+    text-align: justify;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .card-projects {
+    width: 90%;
+    height: 100%;
+    gap: 0;
+  }
+
+  .card-projects h4 {
+    margin-top: 15px;
+  }
+
+  .team-section p {
+    text-align: justify;
+    padding: 25px;
+  }
+
+  .team {
+    flex-direction: column;
+  }
+
+  .card-team {
+    width: 90%;
+    height: 100%;
+  }
+
+  .feed-form {
+    width: 90%;
+  }
 }
