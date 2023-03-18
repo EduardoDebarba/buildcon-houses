@@ -86,31 +86,36 @@ header nav ul li a:hover{
   font-size: 25px;
 }
 
-.second-section {
-  height: 100vh;
+.second-section{
   display: flex;
-  gap: 50px;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  padding: 130px;
+  gap: 90px;
 }
 
-.second-section h2 {
-  font-size: 40px;
-  margin-bottom: 10px;
-  text-align: center;
+.second-section img{
+  border-radius: 10px;
 }
 
-.second-section p {
-  font-size: 21px;
-  line-height: 30px;
-  text-align: justify;
-  width: 70%;
+.second-section div h2{
+  font-size: 50px;
+  margin-bottom: 2rem;
 }
 
-.second-section .button {
-  margin: 0;
-  margin-top: 20px;
+.second-section p{
+  font-size: 25px;
+  line-height: 35px;
+  text-align: justify ;
+}
+
+.second-section h4{
+  color: rgb(94, 198, 37);
+  margin-bottom: 2rem;
+}
+
+#text-about{
+  margin-top: 2rem;
 }
 
 .third-section {
@@ -463,23 +468,22 @@ footer {
   }
 
   .second-section {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    height: 100%;
-  }
-
-  .second-section .img-about {
-    display: none;
-  }
-
-
-  .second-section p {
     padding: 25px;
-    text-align: justify;
-  }
+   }
+ 
+   .second-section img{
+     width: 100%;
+    order: 2;
+   }
+ 
+   .second-section h2, h4{
+     text-align: center;
+   }
+ 
+   .second-section h2{
+     margin-top: 100px;
+   }
 
   .third-section {
     height: 100%;
@@ -640,16 +644,22 @@ footer {
   }
 
   .second-section {
-   display: flex;
-   align-items: center;
+   flex-direction: column;
+   padding: 25px;
   }
 
+  .second-section img{
+    width: 100%;
+   order: 2;
+  }
 
+  .second-section h2, h4{
+    text-align: center;
+  }
 
-.second-section p{
-  flex: 1;
-}
-
+  .second-section h2{
+    margin-top: 100px;
+  }
 
 
   .third-section {
