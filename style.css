@@ -55,34 +55,151 @@ header nav ul li a:hover{
   color: rgb(94, 198, 37);
 }
 
-.first-section {
-  background-image: url(./images/home-1.jpg);
-  height: 92vh;
+.slider{
+  margin: 0 auto;
   width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  height: 55em;
+  overflow: hidden;
+}
+
+.slides{
+  width: 400%;
+  height: 55em;
   display: flex;
-  align-items: center;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+
+.manual-navigation{
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+  display: flex;
   justify-content: center;
 }
 
-.center {
-  color: white;
+.manual-btn{
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 100px;
+}
+
+.manual-btn:hover{
+  background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+  margin: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+  margin-left:  -50%;
+}
+
+.navigation-auto div{
+  border: 2px solid rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto{
+  position: absolute;
+  width: 100%;
+  margin-top: 52.5em;
   display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 100px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: white
+}
+
+.first {
+  background-image: url(./images/home-1.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  text-align: center;
-  line-height: 50px;
+  background-size: cover;
+  color: white;
+  gap: 20px;
 }
 
-.center h2 {
+.second{
+  background-image: url(./images/home-2.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  color: white;
+  gap: 20px;
+}
+
+.third{
+  background-image: url(./images/home-3.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  color: #fff;
+  gap: 20px;
+}
+
+.first h2 {
   font-size: 50px;
 }
 
-.center p {
+.first p {
+  font-size: 25px;
+}
+
+.second h2 {
+  font-size: 50px;
+}
+
+.second p {
+  font-size: 25px;
+}
+
+.third h2 {
+  font-size: 50px;
+}
+
+.third p {
   font-size: 25px;
 }
 
@@ -435,7 +552,7 @@ footer {
 
   .menu-section.on .menu-toggle {
     position: absolute;
-    right: 115px;
+    right: 150px;
     top: 20px;
   }
 
@@ -468,19 +585,40 @@ footer {
     display: block;
   }
 
-  .first-section .center {
-    width: 90%;
+  .slides{
+    text-align: center;
   }
 
-  .first-section .center h2 {
-    font-size: 50px;
-    width: 100%;
-    margin-bottom: 15px;
+  .first h2{
+    font-size: 45px;
+    padding: 20px;
   }
 
-  .first-section .center p {
-    font-size: 20px;
+  .first p{
+    font-size: 35px;
+    padding: 20px;
   }
+
+  .second h2{
+    font-size: 45px;
+    padding: 20px;
+  }
+
+  .second p{
+    font-size: 35px;
+    padding: 20px;
+  }
+
+  .third h2{
+    font-size: 45px;
+    padding: 20px;
+  }
+
+  .third p{
+    font-size: 35px;
+    padding: 20px;
+  }
+
 
   .second-section {
     flex-direction: column;
@@ -644,18 +782,38 @@ footer {
     display: block;
   }
 
-  .first-section .center {
-    width: 90%;
+  .slides{
+    text-align: center;
   }
 
-  .first-section .center h2 {
-    font-size: 50px;
-    width: 100%;
-    margin-bottom: 15px;
+  .first h2{
+    font-size: 35px;
+    padding: 20px;
   }
 
-  .first-section .center p {
-    font-size: 20px;
+  .first p{
+    font-size: 25px;
+    padding: 20px;
+  }
+
+  .second h2{
+    font-size: 35px;
+    padding: 20px;
+  }
+
+  .second p{
+    font-size: 25px;
+    padding: 20px;
+  }
+
+  .third h2{
+    font-size: 35px;
+    padding: 20px;
+  }
+
+  .third p{
+    font-size: 25px;
+    padding: 20px;
   }
 
   .second-section {

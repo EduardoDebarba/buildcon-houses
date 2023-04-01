@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <script src="./script.js" defer></script>
-    <script src="./projects.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Buildcon</title>
   </head>
   <body>
@@ -53,33 +53,58 @@
     </header>
 
     <main>
-      <section class="first-section">
-        <div class="center">
-          <h2>SUA CASA DOS SONHOS</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
-            magnam asperiores ratione, pariatur facilis eaque
-          </p>
-          <button class="button">Saiba Mais</button>
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+  
+          <div class="slide first">
+            <h2>SUA CASA DOS SONHOS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quo, velit ea minus sunt rerum totam</p>
+            <button class="button">Saiba Mais</button>
+          </div>
+  
+          <div class="slide second">
+            <h2>SUA CASA DOS SONHOS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quo, velit ea minus sunt rerum totam</p>
+            <button class="button">Saiba Mais</button>
+          </div>
+  
+          <div class="slide third">
+            <h2>SUA CASA DOS SONHOS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quo, velit ea minus sunt rerum totam</p>
+            <button class="button">Saiba Mais</button>
+          </div>
+  
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+          </div>
         </div>
-      </section>
-
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+      </div>
       <section class="second-section">
           
-       <img src="./images/company.jpeg" alt="">
+       <img class="scroll" src="./images/company.jpeg" alt="">
         <div>
-          <h2 >
+          <h2 class="scroll" >
             Sobre a Empresa
           </h2>
-          <h4 >52 Anos de História</h4>
-          <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quibusdam libero quas modi, ipsa repellendus eos quis obcaecati doloremque sapiente aliquid voluptatum eaque ipsam deserunt provident vel!</p>
-          <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, minima minus? Cumque tempora alias repudiandae aperiam repellat consequatur, fuga, modi totam assumenda maxime excepturi voluptate inventore incidunt voluptatem.</p>
-          <h4 id="text-about">Nossa Missão</h4>
-          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima exercitationem nisi deserunt. Dolores consequuntur fugit, sed quia debitis saepe cum rerum laborum a quo vitae ratione mollitia fuga impedit facilis!</p>
+          <h4 class="scroll" >52 Anos de História</h4>
+          <p class="scroll" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quibusdam libero quas modi, ipsa repellendus eos quis obcaecati doloremque sapiente aliquid voluptatum eaque ipsam deserunt provident vel!</p>
+          <p class="scroll" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, minima minus? Cumque tempora alias repudiandae aperiam repellat consequatur, fuga, modi totam assumenda maxime excepturi voluptate inventore incidunt voluptatem.</p>
+          <h4 class="scroll" id="text-about">Nossa Missão</h4>
+          <p class="scroll" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima exercitationem nisi deserunt. Dolores consequuntur fugit, sed quia debitis saepe cum rerum laborum a quo vitae ratione mollitia fuga impedit facilis!</p>
         </div>
       </section>
 
-      <section class="third-section">
+      <section class="third-section scroll">
         <h2>Nossos Serviços</h2>
         <p id="text-section">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste maiores
@@ -124,7 +149,7 @@
         </div>
       </section>
 
-      <section id="text-section" class="projects-section">
+      <section id="text-section" class="projects-section scroll">
         <h2>Nossos Projetos</h2>
         <p id="text-projects">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil facere
@@ -205,7 +230,7 @@
         <button id="btn-more" class="button" onclick="btnClick()">Mostrar mais/menos Projetos</button>
       </div>
 
-      <section class="team-section">
+      <section class="team-section scroll">
         <h2>Nossa Equipe</h2>
         <p id="text-section">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugit
@@ -325,7 +350,7 @@
         </div>
       </section>
 
-      <section class="contact-section">
+      <section class="contact-section scroll">
         <h2>Entre em Contato</h2>
         <p id="text-section">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
