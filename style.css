@@ -9,24 +9,35 @@ body {
   font-family: "Golos Text", sans-serif;
 }
 
+section{
+  width: 70%;
+  margin: 0 auto;
+}
+
 .first-section{
   height: 100dvh;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: visible;
+  /* padding: 2rem; */
+  /* background-color: yellow; */
+  padding: 2rem 0 2rem 0;
+  position: relative;
+  /* background-color: red; */
 }
 
 .text-left-first{
-  width: 60%;
-  margin-left: 6rem;
+  width: 55%;
+  /* margin-left: 6rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 70vh; 
-  padding: 20px;
+  height: 75vh; 
+  /* padding: 20px; */
   box-sizing: border-box;
   position: relative;
+  /* background-color: yellow; */
 }
 
 .text-left-first h3{
@@ -69,6 +80,7 @@ font-weight: 800;
   background-color: #fff;
   border: #18A7B4 1px solid;
   color: #18A7B4;
+  width: 30%;
 }
 
 .numbers-about{
@@ -82,11 +94,16 @@ font-weight: 800;
 
 .right-content{
 background-image: url("./images/main-img.jpg");
-width: 40%;
+/* width: 100%; */
 height: 100%;
 background-size: cover;
   border-radius: 15px 15px 15px 250px;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
+  /* width: 55%;
+  transform: translateX(20%); */
+  /* margin-left: 20px; gruda na div da esquerda */
+  transform: translateX(150px); /* empurra para a direita sem separar */
+  width: 45%;
 }
 
 .text-header{
@@ -116,6 +133,59 @@ background-size: cover;
   text-decoration: none;
   color: #312f2f;
   font-weight: 600;
+}
+
+.partner-companies{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(230, 226, 221);
+  width: 70%;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.partner-companies img{
+  width: 13%;
+}
+
+.choose-us{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+width: 70%;
+margin: 0 auto;
+margin-top: 5rem;
+/* background-color: yellow; */
+}
+
+.choose-right{
+width: 52%;
+/* background-color: blue; */
+}
+
+.choose-right h2{
+  font-size: 2.3rem;
+}
+
+.choose-left{
+  width: 45%;
+  margin-top: 3.5rem;
+  /* background-color: red; */
+}
+
+.choose-left p{
+margin-bottom: 2rem;
+}
+
+.choose-left .btn{
+  width: 40%;
 }
 
 .second-section{
