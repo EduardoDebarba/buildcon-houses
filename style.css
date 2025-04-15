@@ -9,14 +9,39 @@ body {
 	font-family: "Golos Text", sans-serif;
 }
 
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 5rem 0 5rem;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+header button {
+	width: 15% !important;
+}
+
 .hero {
 	display: flex;
-	padding: 60px 80px 0; 
+	padding: 30px 80px 0;
 	align-items: flex-start;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	position: relative;
-	height: 80dvh;
+	height: 75dvh;
 }
 
 .hero-left {
@@ -108,7 +133,9 @@ body {
 	background: transparent;
 }
 
-.form-card button {
+.form-card button,
+.services-text button,
+header button {
 	background-color: #ef4c3c;
 	color: white;
 	padding: 12px;
@@ -145,4 +172,316 @@ body {
 .stat p {
 	margin-top: 5px;
 	font-size: 16px;
+}
+
+.services {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4rem;
+	gap: 2rem;
+}
+
+.services-text {
+	width: 22%;
+	height: 100%;
+}
+
+.services-text h2 {
+	font-size: 2.1rem;
+	margin-bottom: 2rem;
+}
+
+.card-services {
+	background-color: #e0dcdc;
+	padding: 1rem;
+	width: 23%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.card-services img {
+	width: 15%;
+}
+
+.card-services h4 {
+	font-size: 1.4rem;
+	margin-top: 0.5rem;
+}
+
+.card-services p {
+	color: #929292;
+}
+
+.text-left {
+	width: 40%;
+	margin-left: 3rem;
+}
+
+.text-left h2 {
+	width: 90%;
+	font-size: 2rem;
+}
+
+.text-left p {
+	margin: 2rem 0 2rem 0;
+}
+
+.progress-section {
+	max-width: 600px;
+	margin: 40px auto;
+	font-family: Arial, sans-serif;
+}
+
+.progress-section h2 {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.progress-section p {
+	color: #777;
+	margin-bottom: 30px;
+}
+
+.progress-bar {
+	margin-bottom: 25px;
+	width: 75%;
+}
+
+.progress-info {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+.bar-bg {
+	background-color: #fff2c7;
+	border-radius: 10px;
+	height: 10px;
+	overflow: hidden;
+}
+
+.bar-fill {
+	background-color: #f8c900;
+	height: 100%;
+	width: 0;
+	transition: width 1s ease-in-out;
+	border-radius: 10px;
+}
+
+.experience {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+}
+
+.texto {
+	flex: 1;
+}
+
+.imagens {
+	flex: 1;
+	display: flex;
+	align-items: flex-end;
+	margin-right: 3rem;
+	margin-left: -100px;
+}
+
+.img-circular {
+	min-width: 350px;
+	height: 400px;
+	border-radius: 50% 50% 0 0;
+	left: 100px;
+	position: relative;
+}
+
+.img-retangular-container {
+	position: relative;
+}
+
+.img-retangular {
+	width: 425px;
+	height: 500px;
+	border-radius: 50% 50% 0 0;
+	top: 4px;
+	position: relative;
+}
+
+.experiencia-box {
+	position: absolute;
+	bottom: -0%;
+	right: -5%;
+	background: #f04e3e;
+	color: white;
+	font-size: 20px;
+	border-radius: 50% 50% 0 0;
+	text-align: center;
+	width: 125px;
+	height: 130px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.experiencia-box h5 {
+	font-size: 1.9rem;
+}
+
+.companies {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 5rem;
+}
+
+.card-companies img {
+	width: 70%;
+}
+
+.card-companies {
+	width: 17%;
+	background-color: #cecaca;
+	padding: 1rem;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 110px;
+}
+
+.reviews {
+	height: 100dvh;
+}
+
+.reviews h2 {
+	padding: 4rem;
+	margin-left: 1rem;
+	font-size: 2.5rem;
+	width: 60%;
+	font-weight: 500;
+}
+
+.swiper {
+	width: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #e4e1e1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 55dvh;
+	width: 60%;
+	border-radius: 15px;
+	padding: 2rem;
+}
+
+.swiper-slide img {
+	width: 5%;
+}
+
+.swiper-slide p {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 1rem;
+}
+
+.swiper-slide:nth-child(1n) {
+	width: 70%;
+}
+
+.people {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+.people img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.people-text h5 {
+	font-size: 1.1rem;
+}
+
+.repairs h2 {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2rem;
+	width: 50%;
+	margin-top: 2rem;
+}
+
+.repairs-div {
+	display: grid;
+	grid-template-areas:
+		"repair1 repair2 repair3"
+		"repair1 repair2 repair3"
+		"repair4 repair2 repair6"
+		"repair4 repair5 repair6"
+		"repair7 repair5 repair8"
+		"repair7 repair5 repair8";
+	height: 150dvh;
+	gap: 1.5rem;
+	padding: 2rem 4rem 4rem 4rem;
+}
+
+.repairs-div div {
+	background-size: cover;
+	border-radius: 15px;
+}
+
+.repair1 {
+	grid-area: repair1;
+	background-image: url("./images/repairs/540z30xc78twplthqr73y2ydvhjj22uj.png");
+}
+
+.repair2 {
+	grid-area: repair2;
+	background-image: url("./images/repairs/item-electrika.jpg");
+}
+
+.repair3 {
+	grid-area: repair3;
+	background-image: url("./images/repairs/AdobeStock_349622591.jpeg");
+}
+
+.repair4 {
+	grid-area: repair4;
+	background-image: url("./images/repairs/carpenters_PixieMe_AdobeStock-smaller.jpeg");
+}
+
+.repair5 {
+	grid-area: repair5;
+	background-image: url("./images/repairs/1-3.jpg");
+}
+
+.repair6 {
+	grid-area: repair6;
+	background-image: url("./images/repairs/e3957e53d74737992db83ab7ca783345.jpg");
+}
+
+.repair7 {
+	grid-area: repair7;
+	background-image: url("./images/repairs/montazh.jpg");
+}
+
+.repair8 {
+	grid-area: repair8;
+	background-image: url("./images/repairs/bd0dee77e157e76f1ce8dc9e5115a70d.jpg");
 }
