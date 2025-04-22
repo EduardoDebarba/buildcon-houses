@@ -5,8 +5,8 @@
 }
 
 body {
-	background-color: rgb(238, 245, 242);
 	font-family: "Golos Text", sans-serif;
+	overflow-x: hidden;
 }
 
 header {
@@ -14,6 +14,14 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 5rem 0 5rem;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background-color: #FFFBF2;
+}
+
+header img {
+	width: 15%;
 }
 
 ul {
@@ -42,6 +50,7 @@ header button {
 	flex-wrap: wrap;
 	position: relative;
 	height: 75dvh;
+	background-color: #FFFBF2;
 }
 
 .hero-left {
@@ -148,7 +157,7 @@ header button {
 }
 
 .stats {
-	background-color: #f9c21a;
+	background-color: #FBD781;
 	padding: 4rem 4rem 4rem 6rem;
 	display: flex;
 	justify-content: start;
@@ -193,7 +202,7 @@ header button {
 }
 
 .card-services {
-	background-color: #e0dcdc;
+	background-color: #F2F1F1;
 	padding: 1rem;
 	width: 23%;
 	display: flex;
@@ -348,7 +357,7 @@ header button {
 
 .card-companies {
 	width: 17%;
-	background-color: #cecaca;
+	background-color: #F2F1F1;
 	padding: 1rem;
 	border-radius: 15px;
 	display: flex;
@@ -376,7 +385,7 @@ header button {
 .swiper-slide {
 	text-align: center;
 	font-size: 18px;
-	background: #e4e1e1;
+	background: #F2F1F1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -485,3 +494,406 @@ header button {
 	grid-area: repair8;
 	background-image: url("./images/repairs/bd0dee77e157e76f1ce8dc9e5115a70d.jpg");
 }
+
+.who-we-are {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4rem;
+	padding: 2rem;
+	background-color: #F2F1F1;
+	min-height: 90dvh;
+}
+
+.image-column {
+	position: relative;
+	width: 25%;
+	height: 22rem;
+}
+
+.image-column .image {
+	position: absolute;
+	width: 70%;
+	height: 70%;
+	overflow: hidden;
+	border-radius: 50% 50% 0 0 / 60% 60% 0 0;
+}
+
+.image-column.left .image:nth-child(1) {
+	top: 0;
+	left: 0;
+	transform: rotate(-10deg);
+	z-index: 1;
+}
+
+.image-column.left .image:nth-child(2) {
+	top: 6rem;
+	left: 8rem;
+	transform: rotate(10deg);
+	z-index: 2;
+}
+
+.image-column.right .image:nth-child(1) {
+	top: 0;
+	left: 6rem;
+	transform: rotate(10deg);
+	z-index: 1;
+}
+
+.image-column.right .image:nth-child(2) {
+	top: 6rem;
+	left: -2rem;
+	transform: rotate(-10deg);
+	z-index: 2;
+}
+
+.image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.text-content {
+	max-width: 30rem;
+	text-align: center;
+}
+
+.text-content h1 {
+	font-size: 2.25rem;
+	margin-bottom: 1.25rem;
+	color: #111;
+}
+
+.text-content p {
+	font-size: 1.25rem;
+	color: #555;
+	margin-bottom: 1.875rem;
+	line-height: 1.5;
+}
+
+.text-content button {
+	padding: 0.75rem 1.5rem;
+	font-size: 1rem;
+	background-color: #e74c3c;
+	color: white;
+	border: none;
+	border-radius: 0.375rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.text-content button:hover {
+	background-color: #c0392b;
+}
+
+.articles {
+	padding: 4rem;
+	color: #fff;
+}
+
+.articles h2 {
+	color: #000;
+	margin-bottom: 3rem;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.main-articles {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 2rem;
+	position: relative;
+	margin-top: 3rem;
+	flex-wrap: wrap;
+	height: 90dvh;
+}
+
+.article {
+	width: 45%;
+	height: 100%;
+	border-radius: 50%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.article-1 {
+	background-image: url("./images/fast-response-emergency-locksmiths-in-houston-1.jpg");
+	bottom: 0;
+	left: -10%;
+	z-index: 1;
+}
+
+.article-2 {
+	z-index: 3;
+	width: 45%;
+	background-image: url("./images/New+Look+Roof+•+Roofing+Repairs+•+Louisville\,+KY.png");
+	top: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.article-3 {
+	bottom: 0;
+	right: -10%;
+	z-index: 1;
+	background-image: url("./images/window-tint-install-dallas-480x480.jpg");
+}
+
+.article-calendar,
+.article-read-more {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	z-index: 2;
+}
+
+.article-read-more {
+	cursor: pointer;
+}
+
+.article h3 {
+	width: 70%;
+	text-align: center;
+	font-size: 1.7rem;
+	font-weight: 600;
+	z-index: 100;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+	border-radius: 50%;
+}
+
+.contact {
+	padding: 5rem;
+	height: 100dvh;
+}
+
+.contact h2 {
+	margin-bottom: 2rem;
+	font-size: 2rem;
+}
+
+.text-contact {
+	margin-bottom: 2rem;
+}
+
+.contact-div {
+	display: grid;
+	grid-template-areas:
+		"contact1 contact1 contact2"
+		"contact1 contact1  contact3"
+		"contact1 contact1 contact4";
+	gap: 1.5rem;
+}
+
+.contact1 {
+	grid-area: contact1;
+}
+
+.contact2 {
+	grid-area: contact2;
+}
+
+.contact3 {
+	grid-area: contact3;
+}
+
+.contact4 {
+	grid-area: contact4;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background-color: #F2F1F1;
+	padding: 20px;
+	border-radius: 20px;
+	position: relative;
+	height: 100%;
+}
+
+.form label {
+	position: relative;
+}
+
+.form label .input {
+	width: 100%;
+	padding: 10px 10px 20px 10px;
+	outline: 0;
+	border-style: none;
+	border-bottom: 1px solid rgba(105, 105, 105, 0.397);
+	background-color: transparent;
+}
+
+.form label .input + span {
+	position: absolute;
+	left: 10px;
+	top: 15px;
+	color: grey;
+	font-size: 0.9em;
+	cursor: text;
+	transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+	top: 15px;
+	font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+	top: 30px;
+	font-size: 0.7em;
+	font-weight: 600;
+}
+
+.form label .input:valid + span {
+	color: green;
+}
+
+.btn-form {
+	padding: 0.75rem 1.5rem;
+	font-size: 1rem;
+	background-color: #e74c3c;
+	color: white;
+	border: none;
+	border-radius: 0.375rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	width: 25%;
+}
+
+@keyframes pulse {
+	from {
+		transform: scale(0.9);
+		opacity: 1;
+	}
+
+	to {
+		transform: scale(1.8);
+		opacity: 0;
+	}
+}
+
+.contact2,
+.contact3,
+.contact4 {
+	background-color: #F2F1F1;
+	border-radius: 15px;
+	padding: 1rem;
+	display: flex;
+	justify-content:start;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.contact2,
+.contact3,
+.contact4 p{
+font-size: 1.2rem;
+}
+
+.contact2 img,
+.contact3 img,
+.contact4 img{
+	width: 10%;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 2rem;
+	height: 70dvh;
+	margin-top: 5rem;
+	padding: 2rem 2rem 0 2rem;
+	background-color: #F2F1F1;
+}
+
+.footer-left{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.footer-left p{
+	width: 90%;
+}
+
+.footer-left nav p, .footer-center nav p{
+	margin-bottom: 0.5rem;
+}
+
+.footer-left nav ul, .footer-center nav ul{
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.footer-left img{
+	width: 50%;
+}
+
+.footer-center{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.footer-center input{
+	width: 60%;
+	height: 2rem;
+	border-style: none;
+	outline: none;
+	border-bottom: 1px solid #000;
+	background: transparent;
+	margin-right: 1rem;
+}
+
+.footer-center button{
+	padding: 0.75rem 1.5rem;
+	font-size: 1rem;
+	background-color: #e74c3c;
+	color: white;
+	border: none;
+	border-radius: 0.375rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	width: 25%;
+}
+
+.footer-right{
+	width: 25%;
+	background-image: url("./images/22319c69-a14d-496e-9af0-8739675ecfb1.jpg");
+	background-size: cover;
+	height: 100%;
+	border-radius: 45% 45% 0 0;
+}
+
+.footer-right p{
+	display: none;
+}
+
+
