@@ -5,7 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
-		<link rel="shortcut icon" href="./images/icons/icons8-trabalhador-64.png" type="image/x-icon" />
+		<link
+			rel="shortcut icon"
+			href="./images/icons/icons8-trabalhador-64.png"
+			type="image/x-icon"
+		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -18,110 +22,119 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 		/>
-		<title>Buildcon</title>
+		<title>Buildcon Company</title>
 	</head>
 	<body>
 		<header>
-			<img src="./images/logo.png" alt="" />
+			<img src="./images/logo.png" alt="logo-buildcon-company" />
 			<nav>
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">Parceiros</a></li>
-					<li><a href="">Avaliações</a></li>
-					<li><a href="">Serviços</a></li>
-					<li><a href="">Contato</a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#parceiros">Parceiros</a></li>
+					<li><a href="#avaliacoes">Avaliações</a></li>
+					<li><a href="#servicos">Serviços</a></li>
+					<li><a href="#contato">Contato</a></li>
 				</ul>
 			</nav>
-			<button>Entre em Contato</button>
+			<a href="#contato"><button class="btn">Entre em Contato</button></a>
 		</header>
 
-		<section class="hero">
-			<div class="hero-left">
-				<h1>
-					Gama completa de <br />
-					Serviços de <span class="highlight">Manutenção</span>
-				</h1>
-				<div class="watch-intro">
-					<button class="play-btn">&#9658;</button>
-					<span>Assista Agora</span>
+		<section class="hero" id="home">
+			<div class="content-hero">
+				<div class="hero-left">
+					<h1>
+						Gama completa de <br />
+						Serviços de <span class="highlight">Manutenção</span>
+					</h1>
+					<div class="watch-intro">
+						<button class="play-btn">&#9658;</button>
+						<span>Assista Agora</span>
+					</div>
+				</div>
+
+				<div class="hero-right">
+					<form class="form-card">
+						<h2>Consertamos sua casa conforme sua programação</h2>
+						<input type="text" placeholder="Seu Nome" />
+						<input type="email" placeholder="Seu Email" />
+						<input type="tel" placeholder="Número" />
+						<input type="text" placeholder="Detalhes do Ocorrido" />
+						<select>
+							<option>Tipo de Reparo</option>
+							<option>Encanamento</option>
+							<option>Elétrico</option>
+							<option>Pintura</option>
+							<option>Instalação de Ar Condicionado</option>
+							<option>Montagem de Móveis</option>
+							<option>Reparo de Telhado</option>
+							<option>Impermeabilização</option>
+							<option>Alvenaria</option>
+							<option>Troca de Pisos ou Azulejos</option>
+							<option>Manutenção de Portas e Janelas</option>
+							<option>Instalação de Iluminação</option>
+							<option>Reparo de Gesso</option>
+							<option>Soldagem</option>
+							<option>Instalação de Ventilador de Teto</option>
+						</select>
+						<button type="submit" class="btn">Marque seu Horário</button>
+					</form>
 				</div>
 			</div>
-
-			<div class="hero-center">
-				<img
-					src="./images/—Pngtree—power lineman electrician_13377739.png"
-					alt="Handyman"
-					class="handyman-img"
-				/>
-			</div>
-
-			<div class="hero-right">
-				<form class="form-card">
-					<h2>Consertamos sua casa conforme sua programação</h2>
-					<input type="text" placeholder="Seu Nome" />
-					<input type="email" placeholder="Seu Email" />
-					<input type="tel" placeholder="Número" />
-					<input type="text" placeholder="Detalhes do Ocorrido" />
-					<select>
-						<option>Tipo de Reparo</option>
-						<option>Encanamento</option>
-						<option>Elétrico</option>
-						<option>Pintura</option>
-						<option>Instalação de Ar Condicionado</option>
-						<option>Montagem de Móveis</option>
-						<option>Reparo de Telhado</option>
-						<option>Impermeabilização</option>
-						<option>Alvenaria</option>
-						<option>Troca de Pisos ou Azulejos</option>
-						<option>Manutenção de Portas e Janelas</option>
-						<option>Instalação de Iluminação</option>
-						<option>Reparo de Gesso</option>
-						<option>Soldagem</option>
-						<option>Instalação de Ventilador de Teto</option>
-					</select>
-					<button type="submit">Marque seu Horário</button>
-				</form>
-			</div>
-		</section>
-
-		<section class="stats">
-			<div class="stat">
-				<h3>1.5K<span class="plus">+</span></h3>
-				<p>Clientes Satisfeitos</p>
-			</div>
-			<div class="stat">
-				<h3>3K<span class="plus">+</span></h3>
-				<p>Projetos Concluídos</p>
+			<div class="stats">
+				<div class="stats-content">
+					<div class="stat">
+						<h3>1.5K<span class="plus">+</span></h3>
+						<p>Clientes Satisfeitos</p>
+					</div>
+					<div class="stat">
+						<h3>3K<span class="plus">+</span></h3>
+						<p>Projetos Concluídos</p>
+					</div>
+				</div>
+				<div class="hero-center">
+					<img
+						src="./images/—Pngtree—power lineman electrician_13377739.png"
+						alt="Handyman"
+						class="handyman-img"
+					/>
+				</div>
 			</div>
 		</section>
 
 		<section class="services">
 			<div class="services-text">
 				<h2>Nossos Serviços Populares</h2>
-				<button>Agende Agora</button>
+				<a href="#contato"><button class="btn">Agende Agora</button></a>
+				
 			</div>
 			<div class="card-services">
-				<img src="./images/icons/icons8-encanamento-100.png" alt="" />
+				<img
+					src="./images/icons/icons8-encanamento-100.png"
+					alt="encanamento"
+				/>
 				<h4>Encanamento</h4>
 				<p>
-					Reparos e instalações hidráulicas com agilidade, segurança e qualidade
-					garantida.
+					Soluções rápidas e eficientes para vazamentos, entupimentos e
+					instalação de encanamentos em banheiros, cozinhas e lavanderias.
 				</p>
 			</div>
 			<div class="card-services">
-				<img src="./images/icons/icons8-martelo-100.png" alt="" />
+				<img src="./images/icons/icons8-martelo-100.png" alt="carpintaria" />
 				<h4>Carpintaria</h4>
 				<p>
-					Soluções sob medida em madeira com acabamento profissional para sua
-					casa ou empresa.
+					Montamos, reformamos e ajustamos móveis, portas e estruturas de
+					madeira com precisão, durabilidade e acabamento profissional.
 				</p>
 			</div>
 			<div class="card-services">
-				<img src="./images/icons/icons8-brocha-de-pintura-100.png" alt="" />
+				<img
+					src="./images/icons/icons8-brocha-de-pintura-100.png"
+					alt="pintura"
+				/>
 				<h4>Pintura</h4>
 				<p>
-					Transformamos seus ambientes com pintura precisa, durável e cheia de
-					estilo.
+					Transforme seus ambientes com pintura de alta qualidade, acabamentos
+					impecáveis e escolha das cores que combinam com seu estilo.
 				</p>
 			</div>
 		</section>
@@ -186,40 +199,53 @@
 			</div>
 		</section>
 
-		<section class="companies">
+		<section class="companies" id="parceiros">
 			<div class="card-companies">
-				<img src="./images/companies/Falken-logo-768x432.png" alt="" />
+				<img
+					src="./images/companies/Falken-logo-768x432.png"
+					alt="logo-falken"
+				/>
 			</div>
 			<div class="card-companies">
-				<img src="./images/companies/Giant-Bicycles-Logo-640x400.png" alt="" />
+				<img
+					src="./images/companies/Giant-Bicycles-Logo-640x400.png"
+					alt="logo-giant"
+				/>
 			</div>
 			<div class="card-companies">
-				<img src="./images/companies/Kobelco-Logo-640x400.png" alt="" />
+				<img
+					src="./images/companies/Kobelco-Logo-640x400.png"
+					alt="logo-kobelco"
+				/>
 			</div>
 			<div class="card-companies">
-				<img src="./images/companies/MAHLE-Logo-640x400.png" alt="" />
+				<img src="./images/companies/MAHLE-Logo-640x400.png" alt="logo-mahle" />
 			</div>
 			<div class="card-companies">
-				<img src="./images/companies/Sunrun-logo-768x417.png" alt="" />
+				<img
+					src="./images/companies/Sunrun-logo-768x417.png"
+					alt="logo-sunrun"
+				/>
 			</div>
 		</section>
 
-		<section class="reviews">
+		<section class="reviews" id="avaliacoes">
 			<h2>Veja o que eles têm a dizer sobre nossos serviços profissionais.</h2>
 			<div class="swiper mySwiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<img
 							src="./images/icons/icons8-aspas-esquerdas-100 (1).png"
-							alt=""
+							alt="aspas"
 						/>
 						<p>
-							Precisava resolver vários problemas em casa, desde um vazamento
-							até a pintura da sala. Fiquei impressionada com a agilidade e o
-							cuidado em cada detalhe. Um serviço completo, sem dor de cabeça!
+							O profissional chegou no horário combinado, resolveu o vazamento
+							rapidamente e ainda explicou tudo com paciência. Atendimento de
+							primeira, limpeza no local e resultado excelente. Com certeza
+							chamarei novamente quando precisar de encanador!
 						</p>
 						<div class="people">
-							<img src="./images/person/Diane.jpg" alt="" />
+							<img src="./images/person/Diane.jpg" alt="camila-ferreira" />
 							<div class="people-text">
 								<h5>Camila Ferreira</h5>
 								<p>Advogada</p>
@@ -229,17 +255,18 @@
 					<div class="swiper-slide">
 						<img
 							src="./images/icons/icons8-aspas-esquerdas-100 (1).png"
-							alt=""
+							alt="aspas"
 						/>
 						<p>
-							Agendei a troca de tomadas e instalação de luminárias. Chegaram
-							pontualmente, fizeram tudo com capricho e ainda deixaram o
-							ambiente limpo. Excelente experiência!
+							Solicitei a pintura da sala e do corredor. A equipe foi pontual,
+							organizada e super detalhista. O acabamento ficou perfeito e o
+							ambiente renovado. Fiquei muito satisfeita com o resultado e com o
+							cuidado em proteger os móveis e o chão.
 						</p>
 						<div class="people">
 							<img
 								src="./images/person/1d4b9beb5ea21ce5dd9222cd6b95.jpeg"
-								alt=""
+								alt="joão meirelles"
 							/>
 							<div class="people-text">
 								<h5>João Meirelles</h5>
@@ -250,17 +277,18 @@
 					<div class="swiper-slide">
 						<img
 							src="./images/icons/icons8-aspas-esquerdas-100 (1).png"
-							alt=""
+							alt="aspas"
 						/>
 						<p>
-							Desde pequenos reparos até uma reforma no banheiro, o atendimento
-							foi sempre impecável. Muito bom poder contar com uma empresa que
-							resolve tudo!
+							Contratei para montagem de móveis planejados e pequenos ajustes em
+							portas. O serviço foi realizado com precisão e agilidade.
+							Profissionais educados e atenciosos. A madeira foi bem tratada e
+							os acabamentos ficaram impecáveis. Recomendo demais!
 						</p>
 						<div class="people">
 							<img
 								src="./images/person/1eccffdda4406fd41ef860881d35a6a6_300_300.jpg"
-								alt=""
+								alt="leticia antunes"
 							/>
 							<div class="people-text">
 								<h5>Letícia Antunes</h5>
@@ -271,16 +299,18 @@
 					<div class="swiper-slide">
 						<img
 							src="./images/icons/icons8-aspas-esquerdas-100 (1).png"
-							alt=""
+							alt="aspas"
 						/>
 						<p>
-							Solicitei reparo no encanamento e instalação de prateleiras. Foram
-							rápidos, organizados e muito respeitosos. Já virei cliente fiel.
+							Tive um entupimento na cozinha e aproveitei para pintar o cômodo.
+							Resolveram tudo no mesmo dia, com eficiência e simpatia. O
+							resultado foi um ambiente renovado e funcionando perfeitamente. A
+							equipe está de parabéns pelo profissionalismo.
 						</p>
 						<div class="people">
 							<img
 								src="./images/person/easing-into-the-fall-square.jpg"
-								alt=""
+								alt="rafael lima"
 							/>
 							<div class="people-text">
 								<h5>Rafael Lima</h5>
@@ -291,17 +321,18 @@
 					<div class="swiper-slide">
 						<img
 							src="./images/icons/icons8-aspas-esquerdas-100 (1).png"
-							alt=""
+							alt="aspas"
 						/>
 						<p>
-							Minha casa estava precisando de vários ajustes. Em um único
-							agendamento, resolveram tudo com eficiência. Adorei o atendimento
-							personalizado!
+							Pedi a restauração de móveis antigos e fiquei impressionado com o
+							cuidado no trabalho. A madeira foi lixada, tratada e envernizada
+							com perfeição. Agora tenho peças que parecem novas, mas ainda
+							mantêm o valor sentimental. Excelente serviço!
 						</p>
 						<div class="people">
 							<img
 								src="./images/person/invisalign-bezanson-ortho-03.jpg"
-								alt=""
+								alt="bruna soares"
 							/>
 							<div class="people-text">
 								<h5>Bruna Soares</h5>
@@ -312,15 +343,16 @@
 					<div class="swiper-slide">
 						<img
 							src="./images/icons/icons8-aspas-esquerdas-100 (1).png"
-							alt=""
+							alt="aspas"
 						/>
 						<p>
-							Eles cuidaram da manutenção do portão, consertaram o chuveiro e
-							ainda ajustaram a porta do armário. É muito prático contratar uma
-							equipe versátil assim.
+							Do primeiro contato até a entrega, fui muito bem atendida. A
+							pintura foi feita com capricho, sem sujeira e com excelente
+							acabamento. Fiquei feliz com o cuidado em cada detalhe. O
+							apartamento ficou moderno e aconchegante. Super recomendo!
 						</p>
 						<div class="people">
-							<img src="./images/person/2-4.png" alt="" />
+							<img src="./images/person/2-4.png" alt="felipe gonçalves" />
 							<div class="people-text">
 								<h5>Felipe Gonçalves</h5>
 								<p>Chef de Cozinha</p>
@@ -330,15 +362,16 @@
 					<div class="swiper-slide">
 						<img
 							src="./images/icons/icons8-aspas-esquerdas-100 (1).png"
-							alt=""
+							alt="aspas"
 						/>
 						<p>
-							Finalmente encontrei um serviço confiável para resolver as coisas
-							em casa. Da pintura ao reparo da cerca, fizeram tudo com
-							profissionalismo.
+							Tive um problema no chuveiro e no encanamento do tanque. O
+							atendimento foi rápido, o profissional experiente e o preço justo.
+							Ainda deram dicas de manutenção preventiva. Trabalho limpo,
+							eficiente e com muita atenção ao cliente. Amei!
 						</p>
 						<div class="people">
-							<img src="./images/person/unnamed.jpg" alt="" />
+							<img src="./images/person/unnamed.jpg" alt="tatiane cruz" />
 							<div class="people-text">
 								<h5>Tatiane Cruz</h5>
 								<p>Analista de Sistemas</p>
@@ -350,7 +383,7 @@
 			</div>
 		</section>
 
-		<section class="repairs">
+		<section class="repairs" id="servicos">
 			<h2>Especialistas em todo tipo de reparo Residencial</h2>
 			<div class="repairs-div">
 				<div class="repair1"></div>
@@ -364,7 +397,7 @@
 			</div>
 		</section>
 
-		<section class="who-we-are">
+		<section class="who-we-are" id="sobre">
 			<div class="image-column left">
 				<div class="image">
 					<img
@@ -406,13 +439,16 @@
 			</div>
 		</section>
 
-		<section class="articles">
+		<section class="articles" id="blog">
 			<h2>Leia nossos últimos artigos</h2>
 			<div class="main-articles">
 				<div class="article article-1">
 					<div class="overlay"></div>
 					<div class="article-calendar">
-						<img src="./images/icons/icons8-calendário-25 (1).png" alt="" />
+						<img
+							src="./images/icons/icons8-calendário-25 (1).png"
+							alt="icone-calendario"
+						/>
 						<p>12 Janeiro de 2024</p>
 					</div>
 					<h3>Proteja sua casa com um bom sistema de fechaduras</h3>
@@ -420,14 +456,17 @@
 						<p>Leia Mais</p>
 						<img
 							src="./images/icons/icons8-seta-longa-à-direita-30.png"
-							alt=""
+							alt="seta"
 						/>
 					</div>
 				</div>
 				<div class="article article-2">
 					<div class="overlay"></div>
 					<div class="article-calendar">
-						<img src="./images/icons/icons8-calendário-25 (1).png" alt="" />
+						<img
+							src="./images/icons/icons8-calendário-25 (1).png"
+							alt="icone-calendario"
+						/>
 						<p>25 Maio de 2020</p>
 					</div>
 					<h3>Seu telhado é a parte mais importante de sua casa</h3>
@@ -435,14 +474,17 @@
 						<p>Leia Mais</p>
 						<img
 							src="./images/icons/icons8-seta-longa-à-direita-30.png"
-							alt=""
+							alt="seta"
 						/>
 					</div>
 				</div>
 				<div class="article article-3">
 					<div class="overlay"></div>
 					<div class="article-calendar">
-						<img src="./images/icons/icons8-calendário-25 (1).png" alt="" />
+						<img
+							src="./images/icons/icons8-calendário-25 (1).png"
+							alt="icone calendario"
+						/>
 						<p>7 Setembro de 2023</p>
 					</div>
 					<h3>Janelas: sua primeira linha de defesa da casa</h3>
@@ -450,14 +492,14 @@
 						<p>Leia Mais</p>
 						<img
 							src="./images/icons/icons8-seta-longa-à-direita-30.png"
-							alt=""
+							alt="seta"
 						/>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="contact">
+		<section class="contact" id="contato">
 			<h2>Formulário de Agendamento</h2>
 			<p class="text-contact">
 				Preencha o formulário abaixo para obter um orçamento para seu projeto.
@@ -488,19 +530,25 @@
 							<input required="" placeholder="" type="text" class="input" />
 							<span>Endereço</span>
 						</label>
-						<button class="btn-form">Submit</button>
+						<button class="btn-form">Enviar</button>
 					</form>
 				</div>
 				<div class="contact2">
-					<img src="./images/icons/icons8-mapa-50 (1).png" alt="" />
+					<img src="./images/icons/icons8-mapa-50 (1).png" alt="icone mapa" />
 					<p>245 Rua Castro Alves, São Paulo - SP</p>
 				</div>
 				<div class="contact3">
-					<img src="./images/icons/icons8-telefone-50.png" alt="" />
+					<img
+						src="./images/icons/icons8-telefone-50.png"
+						alt="icone telefone"
+					/>
 					<p>(55)999999777</p>
 				</div>
 				<div class="contact4">
-					<img src="./images/icons/icons8-nova-mensagem-50 (1).png" alt="" />
+					<img
+						src="./images/icons/icons8-nova-mensagem-50 (1).png"
+						alt="icone mensagem"
+					/>
 					<p>buildconcompany@email.com</p>
 				</div>
 			</div>
@@ -508,7 +556,7 @@
 
 		<footer>
 			<div class="footer-left">
-				<img src="./images/logo.png" alt="" />
+				<img src="./images/logo.png" alt="logo-builcon-company" />
 				<p>
 					Trabalhar com esta empresa de manutenção é super tranquilo! A
 					competência e a eficiência nossa em lidar com tarefas, como consertar
@@ -518,10 +566,10 @@
 				<nav>
 					<p>Links Rápidos</p>
 					<ul>
-						<a href=""><li>Serviços</li></a>
-						<a href=""><li>Sobre</li></a>
-						<a href=""><li>Contato</li></a>
-						<a href=""><li>Blog</li></a>
+						<a href="#servicos"><li>Serviços</li></a>
+						<a href="#sobre"><li>Sobre</li></a>
+						<a href="#contato"><li>Contato</li></a>
+						<a href="#blog"><li>Blog</li></a>
 					</ul>
 				</nav>
 			</div>
@@ -529,15 +577,25 @@
 				<div>
 					<label for="">Se inscreva na nossa Newsletter</label>
 					<input type="email" placeholder="Seu Email" />
-					<button>Enviar</button>
+					<button class="btn">Enviar</button>
 				</div>
 				<nav>
 					<p>Redes Sociais</p>
 					<ul>
-						<a href=""><li>Instagram</li></a>
-						<a href=""><li>Facebook</li></a>
-						<a href=""><li>Google Business</li></a>
-						<a href=""><li>Linkedin</li></a>
+						<a href="https://www.instagram.com/" target="_blank"
+							><li>Instagram</li></a
+						>
+						<a href="https://www.facebook.com/" target="_blank"
+							><li>Facebook</li></a
+						>
+						<a
+							href="https://www.google.com/intl/pt-br_br/business/"
+							target="_blank"
+							><li>Google Business</li></a
+						>
+						<a href="https://www.linkedin.com/" target="_blank"
+							><li>Linkedin</li></a
+						>
 					</ul>
 				</nav>
 			</div>
